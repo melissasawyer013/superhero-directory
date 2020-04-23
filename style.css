@@ -1,0 +1,143 @@
+* {
+  box-sizing: border-box;
+}
+/* DO NOT EDIT ABOVE THIS LINE */
+
+
+
+
+/* Style the body */
+body {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+}
+
+
+/* Header/logo Title */
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-image: url(./images/header_img.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 200px;
+}
+
+.header-content {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  background-color: #ffffff;
+  margin: 0;
+  width: 80%;
+}
+
+
+/* Column container */
+.row {
+  display: flex;
+  flex-direction: row;
+}
+
+
+/* Create two unequal columns that sits next to each other */
+/* Sidebar/left column */
+.side {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  background-color: #F1F1F1;
+  /* height: 1000px; */
+}
+
+input {
+  display: flex;
+  max-width: 400px;
+  min-width: 90%;
+  font-size: 1.1em;
+  margin: 10px;
+}
+
+.side h2 {
+  margin: 10px;
+}
+
+.side button {
+  margin: 5px 10px;
+  max-width: 400px;
+  min-width: 90%;
+  font-size: 1.1em;
+}
+
+button[type="submit"] {
+  background-color: #265AAE;
+  color: #ffffff;
+}
+
+button[type="reset"] {
+  background-color: #F1F1F1;
+}
+
+/* Main column */
+.row-main {
+  display: flex;
+  flex-wrap: wrap;
+  width: 70%;
+}
+
+
+/* Hero image, just for this example */
+.hero-card {
+  display: flex;
+  flex-direction: column;
+  border: 2px gray solid;
+  width: 320px;
+  margin: 20px 5px;
+}
+
+.hero-card h3 {
+  margin: 5px;
+  height: 1em;
+}
+
+.hero-card img {
+  margin: 5px;
+  height: 300px;
+  width: auto;
+}
+
+.hero-card p {
+  margin: 5px;
+}
+
+
+/* Footer */
+
+
+.footer {
+  display: flex;
+  background-color: #333333;
+  color: #ffffff;
+  justify-content: center;
+  /* height: 400px; */
+}
+
+
+
+/* DO NOT EDIT BELOW THIS LINE */
+
+/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 700px) {
+  .row, .navbar {   
+    flex-direction: column;
+  }
+  .hero-card {
+    width: 100%;
+    margin: 20px 0;
+  }
+  
+}
